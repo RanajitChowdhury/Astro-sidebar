@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Rubik&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{margin: 0;padding: 0;}
+
+#body-warper{
+  
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 50px auto;
+}
+
+#header{
+  grid-area: 1/1/2/-1;
+  background-color: #293336;
+  /*for it's children*/
+  display: grid;
+  grid-template-columns: auto 60px;
+}
+#h-logo{
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 35px;
+  color: royalblue;
+  
+}
+#h-sidebar-show{
+  text-align-last: center;
+  color: royalblue;
+  
+  padding: 5px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#sidebar{
+  grid-area: 2/1/3/2;
+  background-color: #ffffff;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 160px;
+  grid-auto-rows: 50px;
+  overflow: auto;
+}
+#sb-userinfo{
+  
+  background-color: royalblue;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr 1fr;
+}
+#uimg {
+  background-color: #2b2e2b;
+  align-self: center;
+  justify-self: center;
+  padding: 15px 20px;
+  border-radius: 180px;
+  font-size: 30px;
+  color: white;
+}
+#uname {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+#umail {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sb-la{
+  padding: 14px 5px 0px 15px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+}
+
+#main{
+  grid-area: 2/1/-1/-1;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
